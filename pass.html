@@ -23,18 +23,18 @@ var correct=0;
     var wrong=0; 
 function processPhrase(){
        
-    console.log("Getting form values")
+    //console.log("Getting form values")
     phrase = document.getElementById("form1_phrase").value
     check = document.getElementById("form1_check").value
     confirmed = confirm("Are these the values? "+phrase+" and "+check)
     out = document.getElementById("result")
 
     if(confirmed){
-       
-        out.innerHTML = alert('Access allowed”')
+     
+        out.correct = 1; alert('Access allowed”')
     } else {
        
-        out.innerHTML = alert('Access Denied')
+        out.wrong = 1; alert('Access Denied')
     }
 }
 </script>
