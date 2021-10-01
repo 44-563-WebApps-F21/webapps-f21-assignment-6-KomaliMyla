@@ -19,22 +19,22 @@
 <p id="result"></p>
 
 <script> 
-var correct=0;
-    var wrong=0; 
+
 function processPhrase(){
-       
-    //console.log("Getting form values")
+    var correct=0;
+    var wrong=0; 
+    console.log("Getting form values")
     phrase = document.getElementById("form1_phrase").value
     check = document.getElementById("form1_check").value
-    confirmed = confirm("Are these the values? "+phrase+" and "+check)
+    confirmed = confirm("Are these the values? "+correct+" and "+wrong)
     out = document.getElementById("result")
 
     if(confirmed){
      
-        out.correct = 1; alert('Access allowed”')
+        out.innerHTML = "correct:" + correct; alert('Access allowed”')
     } else {
-       
-        out.wrong = 1; alert('Access Denied')
+        out.innerHTML = "wrong:" + wrong;
+         alert('Access Denied')
     }
 }
 </script>
