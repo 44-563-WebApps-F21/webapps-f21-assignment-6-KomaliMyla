@@ -30,9 +30,9 @@ var wrong =0;
     out = document.getElementById("result")
 
     if(confirmed){
-       out.innerHTML = ("correct:" +correct+1 );alert('Access allowed')
+       out.innerHTML = ("correct:" +correct++ );alert('Access allowed')
     } else {
-        out.innerHTML = ("wrong:" +wrong+1 );alert('Access denied')
+        out.innerHTML = ("wrong:" +wrong++ );alert('Access denied')
     }
 }
 </script>
