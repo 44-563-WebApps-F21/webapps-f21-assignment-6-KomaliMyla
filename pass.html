@@ -24,11 +24,11 @@ var correct=0;
 function processPhrase(){
        
     console.log("Getting form values")
-    age = document.getElementById("form1_phrase").value
-    nick = document.getElementById("form1_check").value
+    phrase = document.getElementById("form1_phrase").value
+    check = document.getElementById("form1_check").value
     confirmed = confirm("Are these the values? "+phrase+" and "+check)
-
     out = document.getElementById("result")
+
     if(confirmed){
         Correcty :1
         out.innerHTML = alert('Access allowed”')
