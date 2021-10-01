@@ -16,7 +16,7 @@
 </form>
 
 
-<p id="result">correct:1</p>
+<p id="result"></p>
 
 <script> 
 var correct=0;
@@ -27,11 +27,14 @@ function processPhrase(){
     age = document.getElementById("form1_phrase").value
     nick = document.getElementById("form1_check").value
     confirmed = confirm("Are these the values? "+phrase+" and "+check)
+
     out = document.getElementById("result")
     if(confirmed){
-        out.innerHTML = "Access Allowed"
+        Correcty :1
+        out.innerHTML = alert('Access allowed”')
     } else {
-        out.innerHTML = "Access Denied"
+        Wrong :1
+        out.innerHTML = alert('Access Denied')
     }
 }
 </script>
