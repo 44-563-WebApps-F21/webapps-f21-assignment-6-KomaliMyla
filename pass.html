@@ -29,10 +29,9 @@ var wrong =0;
     confirmed = confirm("Are these the values? "+correct+" and "+wrong)
     out = document.getElementById("result")
 
-    if(confirmed){
-     
+    if(confirmed==true){
         out.innerHTML = "correct:" +correct
-         alert('Access allowed”')
+         alert('Access allowed')
     } else {
         out.innerHTML = "wrong:" +wrong
          alert('Access Denied')
