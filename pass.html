@@ -26,14 +26,15 @@ var wrong =0;
     console.log("Getting form values")
     phrase = document.getElementById("form1_phrase").value
     check = document.getElementById("form1_check").value
-    confirmed = confirm("Are these the values? "+phrase+" and "+check)
+    confirmed = confirm("Are these the values? "+correct+" and "+wrong)
     out = document.getElementById("result")
 
     if(confirmed){
      
-        out.innerHTML = "correct:" +correct; alert('Access allowed”')
+        out.innerHTML = "correct:" +correct
+         alert('Access allowed”')
     } else {
-        out.innerHTML = "wrong:" +wrong;
+        out.innerHTML = "wrong:" +wrong
          alert('Access Denied')
     }
 }
