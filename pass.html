@@ -26,7 +26,7 @@ function processPhrase(){
     console.log("Getting form values")
     age = document.getElementById("form1_phrase").value
     nick = document.getElementById("form1_check").value
-    confirmed = confirm("Are these the values? "+correct+" and "+wrong)
+    confirmed = confirm("Are these the values? "+phrase+" and "+check)
     out = document.getElementById("result")
     if(confirmed){
         out.innerHTML = "Access Allowed"
