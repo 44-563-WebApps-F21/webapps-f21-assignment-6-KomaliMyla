@@ -30,10 +30,12 @@ function processPhrase(){
     out = document.getElementById("result")
 
     if(phrase==check){
-       out.innerHTML = "correct:" +correct++ 
+        correct = correct+1;
+       out.innerHTML = "correct:" +correct+ 
        alert('Access allowed')
     } else {
-        out.innerHTML = "wrong:" +wrong++ 
+        wrong = wrong +1;
+        out.innerHTML = "wrong:" +wrong+
         alert('Access denied')
     }
 }
