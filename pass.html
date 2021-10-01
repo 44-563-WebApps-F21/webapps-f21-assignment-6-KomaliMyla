@@ -16,13 +16,13 @@
 </form>
 
 
-<p id="result">text will be replaced </p>
+<p id="result">correct:1</p>
 
 <script> 
-
+var correct=0;
+    var wrong=0; 
 function processPhrase(){
-    var correct=0;
-    var wrong=0;    
+       
     console.log("Getting form values")
     age = document.getElementById("form1_phrase").value
     nick = document.getElementById("form1_check").value
