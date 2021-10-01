@@ -26,13 +26,15 @@ function processPhrase(){
     
     phrase = document.getElementById("form1_phrase").value
     check = document.getElementById("form1_check").value
-  
+   
     out = document.getElementById("result")
 
     if(phrase==check){
-       out.innerHTML = ("correct:" +correct++ );alert('Access allowed')
+       out.innerHTML = "correct:" +correct++ 
+       alert('Access allowed')
     } else {
-        out.innerHTML = ("wrong:" +wrong++ );alert('Access denied')
+        out.innerHTML = "wrong:" +wrong++ 
+        alert('Access denied')
     }
 }
 </script>
