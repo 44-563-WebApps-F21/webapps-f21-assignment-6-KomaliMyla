@@ -48,7 +48,7 @@ function processPhrase(){
 <script>
     var usingImage = 1;
     function newImage(){
-        switch(get.usingImage()){
+        switch(usingImage.src()){
             case 1:
             usingImage.src = "Monkey.Jpg";
             usingImage++;
@@ -64,6 +64,7 @@ function processPhrase(){
             
 
         }
+        document.getElementById("newImage").innerHTML = +usingImage;
     }
 </script>
 </body>
