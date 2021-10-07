@@ -7,7 +7,7 @@
 
 <form>
     <label for="form1_phrase">Enter the secret phrase </label>
-    <input type ="Password" id="form1_phrase" name="form1_phrase" min=10 max=50 step=2 value= "1995"> <br>
+    <input type ="Password" id="form1_phrase" name="form1_phrase" min=10 max=50 step=2 value= "Let me in"> <br>
 
     <label for="form1_check">Enter a phrase </label>
     <input type ="text" id="form1_check" name="form1_check" autofocus> <br>
@@ -26,7 +26,6 @@ function processPhrase(){
     
     phrase = document.getElementById("form1_phrase").value
     check = document.getElementById("form1_check").value
-    alert("Is the given value"+check)
     out = document.getElementById("result")
 
     if(phrase==check){
@@ -38,32 +37,36 @@ function processPhrase(){
         out.innerHTML = "wrong:" +wrong ;
         alert('Access denied')
     }
-}
+    out.innerHTML = "Correct count: " + correct + '<br>' + " Wrong count: " + wrong;
+    } 
 </script>
 
 <div class="container ">
-    <img src="Monkey.jpg" class="img-fluid col-md-2" alt="Monkey" height= 200 width=200 onclick=newImage()  > 
+    <img src="Monkey.jpg" class="img-fluid col-md-2" id=monkey alt="Monkey" height= 200 width=200 onclick=newImage()  > 
     
   </div>
 <script>
-    var usingImage ;
-    function newImage(){
+    var usingImage=1 ;
+        function newImage(){
+            img=document.getElementById("monkey")
         switch(usingImage){
             case 1:
-        img.src = "Monkey.Jpg";
-            usingImage++;
+        img.src = "Lion.Jpg";
+        usingImage =usingImage +1;  
             break;
             case 2:
             img.src = "Kangaroo.Jpg";
-            usingImage++;
+            usingImage =usingImage +1;
             break;
             case 3:
             img.src = "Lion.Jpg";
-            
+            usingImage =usingImage +1;
             break; 
-
+            default:
+            usingImage =1 ;
+            img.src="Monkey.jpg";
+            usingImage =usingImage +1;
         }
-        document.getElementById("usingImage").innerHTML = +usingImage;
     }
 </script>
 </body>
